@@ -9,7 +9,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(34, 40, 49);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -19,13 +19,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f3f3f3;
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #b1b1b1;
 }
 
 .sidebar .closebtn {
@@ -39,17 +39,17 @@ body {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: rgb(0, 12, 51);
+  background-color: rgb(20, 40, 80);
   color: white;
   padding: 10px 15px;
-  border: none;
+  border:none;
   position: absolute;
   top: 30px;
   left: 20px;
 }
 
 .openbtn:hover {
-  background-color: rgb(0, 10, 50);
+  background-color: rgb(15, 35, 75);
   border-radius: 10px;
 }
 
@@ -83,4 +83,52 @@ body {
 }
 .down-bar {
   font-size: 7px;
+}
+
+* {box-sizing: border-box;}
+
+.search-bar .search-container {
+  float: left;
+  position: relative;
+  top: -50px;
+  left: 250px;
+}
+
+.search-bar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 13px;
+  border: none;
+}
+
+.search-bar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgb(39, 73, 109);
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.seach-bar .search-container button:hover {
+  background: rgb(30, 70, 100);
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .search-bar a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .seach-bar input[type=text] {
+    border: 1px solid #ccc;  
+  }
 }
