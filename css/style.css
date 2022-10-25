@@ -1,0 +1,181 @@
+body {
+  line-height: 1.5;
+  font-family: "poppins", sans-serif;
+}
+.title-bar-text {
+  position: relative;
+  top: 20px;
+  font-family: math;
+}
+.title-bar {
+  background-color: rgb(20, 40, 80);
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(34, 40, 49);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 1;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #c5c5c5;
+  display: block;
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+
+.sidebar a:hover {
+  color: #eeeeee;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 35px;
+  margin-left: 50px;
+}
+.sidebar .closebtn:hover {
+  color: #dc1313;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(20, 40, 80);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.openbtn:hover {
+  background-color: rgb(15, 35, 75);
+  border-radius: 10px;
+}
+
+#main {
+  transition: margin-right 0.1s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+.github-icon {
+  color: white;
+}
+.github-icon:hover {
+  color: rgb(0, 0, 0);
+}
+.telegram-icon {
+  color: white;
+}
+.telegram-icon:hover {
+  color: rgb(42 171 238);
+}
+.instagram-icon {
+  color: white;
+}
+.instagram-icon:hover {
+  color: #dc2743;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+}
+.containar {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: rgb(20, 40, 80);
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.navbar-icon {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
