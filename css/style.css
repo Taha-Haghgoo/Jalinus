@@ -1,18 +1,41 @@
 @font-face {
   font-family: Vazir;
-  src: url("./assets/Vazir.ttf");
+  src: url("../fonts/Vazir.ttf");
+}
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir-Bold.ttf");
+  font-weight: bold;
+}
+html {
+  min-height: 100%;
+  position: relative;
 }
 body {
-  line-height: 1.5;
-  font-family: "poppins", sans-serif;
+  font-family: Vazir;
+  direction: rtl;
+  padding-top: 56px;
+  padding-bottom: 50px;
+  text-align: right;
 }
-.title-bar-text {
-  position: relative;
-  top: 20px;
-  font-family: math;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.title-bar {
-  background-color: rgb(20, 40, 80);
+
+.item h4 {
+  font-size: 18px;
+}
+
+.item .card-text {
+  font-size: 14px;
+}
+
+.cart-item-title {
+  font-size: 14px;
 }
 .sidebar {
   height: 100%;
@@ -51,23 +74,6 @@ body {
 }
 .sidebar .closebtn:hover {
   color: #dc1313;
-}
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: rgb(20, 40, 80);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  position: absolute;
-  top: 30px;
-  left: 20px;
-}
-
-.openbtn:hover {
-  background-color: rgb(15, 35, 75);
-  border-radius: 10px;
 }
 
 #main {
@@ -123,66 +129,8 @@ body {
 ul {
   list-style: none;
 }
-.footer {
-  background-color: rgb(20, 40, 80);
-  padding: 70px 0;
-}
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-}
-.footer-col h4 {
-  font-size: 18px;
-  color: #fff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50%;
-}
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
 .navbar-icon {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
-}
-.size{
-  position: relative;
 }
